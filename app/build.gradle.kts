@@ -62,7 +62,7 @@ dependencies {
 
   // Hilt
   implementation(libs.hilt.android)
-  kapt(libs.hilt.compiler)
+  kapt(libs.hilt.android.compiler)
   kapt(libs.hilt.android.compiler)
   implementation(libs.androidx.hilt.navigation.compose)
 
@@ -75,11 +75,11 @@ dependencies {
   implementation(libs.androidx.navigation.compose)
 
   // Lifecycle
-  implementation(libs.androidx.lifecycle.runtime.compose)
+  implementation(libs.androidx.lifecycle.runtime.ktx)
   implementation(libs.androidx.lifecycle.viewmodel.compose)
 
   // Coroutines
-  implementation(libs.kotlinx.coroutines.core)
+  implementation(libs.kotlinx.coroutines.android)
   implementation(libs.kotlinx.coroutines.android)
 
   // Material Design (for themes.xml parent)
